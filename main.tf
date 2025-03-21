@@ -66,7 +66,7 @@ data "aws_ec2_instance_type" "arch" {
 # Module block for creating a VPC using terraform-aws-modules/vpc/aws module
 module "vpc" {
   source                                          = "terraform-aws-modules/vpc/aws"
-  version                                         = "5.9.0"
+  version                                         = "5.19.0"
   name                                            = format("%s-%s-vpc", var.environment, var.name)
   cidr                                            = var.vpc_cidr # CIDR FOR VPC
   azs                                             = var.availability_zones
